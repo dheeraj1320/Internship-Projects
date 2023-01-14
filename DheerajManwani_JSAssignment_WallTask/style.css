@@ -1,0 +1,118 @@
+:root {
+  --bg-color: #e9efc0;
+  --txt-color: #1a120b;
+  --primary-color1: #4e944f;
+  --primary-color2: #83bd75;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  background-color: var(--bg-color);
+  color: var(--txt-color);
+}
+
+body {
+  font-size: 1.125rem;
+}
+
+h1 {
+  font-size: 3rem;
+  text-align: center;
+  margin: 2rem;
+}
+
+input {
+  text-align: center;
+  padding: 5px 5px;
+  border-radius: 5px;
+  margin: 8px 0;
+  width: 30%;
+}
+
+input[type="number"] {
+  width: 5%;
+}
+
+button {
+  color: white;
+  border: #1a120b;
+  border-radius: 10px;
+  font-size: 16px;
+  background-color: var(--primary-color1);
+  padding: 16px 32px;
+  width: 250px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--primary-color2);
+}
+
+img {
+  height: 200px;
+}
+
+footer {
+  position: fixed;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+/*  Classes */
+.container {
+  width: 60%;
+  margin: auto;
+}
+
+.form-btn {
+  width: 250px;
+  margin: auto;
+  margin-top: 2rem;
+}
+
+.graphic {
+  display: flex;
+  justify-content: space-between;
+  max-width: 60rem;
+  margin: auto;
+  margin-top: 5rem;
+  /* background-color: #b4e197; */
+}
+
+.bar-graph {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  width: 600px;
+}
+
+.bar {
+  height: 0px;
+  background-color: var(--primary-color1);
+}
+
+.ans-text {
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 2.5rem;
+}
+
+.modal {
+  height: 80vh;
+  width: 100vw;
+  position: absolute;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Utility Classes */
+.hidden {
+  display: none;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/70eb98ab2d.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <title>Operations</title>
+</head>
+
+<body>
+    <h1>Operations</h1>
+    <section class="container">
+        <div class="input-container">
+            <input class="num1" type="number">
+            <span class="operator">+</span>
+            <input class="num2" type="number">
+
+            <span class="equality hidden">=</span>
+            <span class="ans hidden"></span>
+        </div>
+        <div class="operator-container">
+            <a data-operator="+"><i data-operator="+" class="fa-solid fa-plus"></i></a>
+            <a data-operator="-"><i data-operator="-" class="fa-solid fa-minus"></i></a>
+            <a data-operator="X"><i data-operator="X" class="fa-solid fa-xmark"></i></a>
+            <a data-operator="/"><i data-operator="/" class="fa-solid fa-divide"></i></a>
+            <a data-operator="%"><i data-operator="%" class="fa-solid fa-percent"></i></a>
+        </div>
+        <button class="calculate">Calculate</button>
+    </section>
+    <section class="container error hidden">
+        <h1>Please enter valid values.</h1>
+        <button class="ok">OK</button>
+    </section>
+
+    <footer>Made by Dheeraj Kumar Manwani</footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

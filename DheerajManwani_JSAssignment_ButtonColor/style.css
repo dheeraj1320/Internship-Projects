@@ -1,0 +1,84 @@
+:root {
+  --bg-color: #e9efc0;
+  --txt-color: #1a120b;
+  --primary-color1: #4e944f;
+  --primary-color2: #83bd75;
+  --primary-color3: #a6cf9d;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--bg-color);
+  color: var(--txt-color);
+  overflow: hidden;
+}
+
+button {
+  padding: 15px 30px;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+h1 {
+  position: absolute;
+  top: 200px;
+  font-size: 2.5rem;
+}
+
+footer {
+  position: fixed;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Classes */
+
+.container {
+  width: 600px;
+  height: 200px;
+  border-radius: 5px;
+  background-color: var(--primary-color3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.color-btns {
+  display: flex;
+  justify-content: space-around;
+}
+
+.color-btns button {
+  width: 150px;
+  transition: all 0.2s ease-in-out;
+}
+
+.color-btns button:hover {
+  box-shadow: 1px 5px 5px 1px rgba(0, 0, 0, 0.3);
+}
+
+.red {
+  background-color: #da012d;
+}
+
+.green {
+  background-color: #03c04a;
+}
+
+.yellow {
+  background-color: #e8c433;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Wall Task</title>
+</head>
+
+<body>
+    <h1>Wall Task</h1>
+    <section class="modal hidden">
+        <h2>ERROR! Please enter correct values</h2>
+        <button class="reload">Reload</button>
+    </section>
+    <section class="container">
+        <p class="info">Enter the number of walls and the height of each wall seperated by '#' to get the number of
+            walls visible to both persons.</p>
+        <form class="wall-form">
+            <label for="wall-num">Enter number of walls :</label>
+            <input id="wall-num" type="number" value="15">
+            <br>
+            <label for="wall-heights">Enter the height of each wall starting from the left seperated by '#' :</label>
+            <input id="wall-heights" type="text" value="2#4#5#7#12#10#7#9#4#2#1#4#3#1#1">
+            <br>
+            <div class="form-btn">
+                <button class="wall-btn" type="submit">Submit</button>
+            </div>
+        </form>
+    </section>
+    <section class="container answer hidden">
+        <div class="graphic">
+            <img src="img/man-standing-right.png" alt="">
+            <div class="bar-graph">
+            </div>
+            <img src="img/man-standing-left.png" alt="">
+        </div>
+
+        <div class="ans-text"></div>
+    </section>
+    <footer>Made by Dheeraj Kumar Manwani</footer>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
