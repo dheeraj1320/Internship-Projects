@@ -38,6 +38,8 @@ const calcBtnHandler = () => {
   if (currOperator === "/") answer = number1 / number2;
   if (currOperator === "%") answer = number1 % number2;
 
+  answer = answer.toFixed(2);
+
   equality.classList.remove("hidden");
   ansEl.classList.remove("hidden");
   ansEl.textContent = answer;
